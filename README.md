@@ -32,12 +32,17 @@ cd Real-Estate-Price-Prediction
 # For Windows
 ```
 python -m venv venv
-.\\venv\\Scripts\\activate
+venv\Scripts\activate
 ```
 
 **3. Install the required packages: Now, install all the necessary libraries from the requirements.txt file.**
 ```
 pip install -r requirements.txt
+```
+
+**4. Generate model files using:**
+```
+jupyter notebook
 ```
 
 ## 🏃‍♂️**How to Run the Application:**
@@ -53,8 +58,7 @@ This will start a local web server and automatically open the application in you
 
 ## 📂 **Project Structure:**
 ```
-├── final_model.joblib                     # Saved final machine learning model
-├── scaler.joblib                          # Saved data scaler
+├── .gitignore                             # Hides files from GitHub
 ├── app.py                                 # The Python script for the Streamlit web application
 ├── Real Estate Price Prediction.ipynb     # Jupyter Notebook with the full ML workflow (analysis, training, etc.)
 ├── requirements.txt                       # List of Python dependencies for reproducibility
