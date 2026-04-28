@@ -1,14 +1,22 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
+import requests
 
 @st.cache_resource
 def load_assets():
-    """
-    Loads the saved machine learning model and scaler from disk.
-    This function is cached to ensure it's only run once per session.
-    """
+    def download_file(url, filename):
+        if not os.path.exists(filename):
+            r = requests.get(url)
+            with open(filename, "wb") as f:
+                f.write(r.content)
+    # Download files if not present
    
+    download_file("https://drive.google.com/uc?export=download&id=1TDzxxjTdfx9C6w_Jyz0TfVH6YJtFbF9g", "final_model.joblib")
+    download_file("https://drive.google.com/uc?export=download&id=1GSXPSnIGH1oOwVRi8jlMhcL_LqMJLULp", "scaler.joblib")
+
+    # Load them
     scaler = joblib.load('scaler.joblib')
     model = joblib.load('final_model.joblib')
 
