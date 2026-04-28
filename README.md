@@ -24,7 +24,7 @@ To run this application locally, you'll need to set up a Python virtual environm
 **1. Clone the repository (or download the source code):**
 ```bash
 git clone https://github.com/KashishPundir/Real-Estate-Price-Prediction.git
-cd Real_Estate_Price_Prediction
+cd Real-Estate-Price-Prediction
 ```
 
 **2. Create and activate a Python virtual environment: This keeps the project's dependencies isolated.**
