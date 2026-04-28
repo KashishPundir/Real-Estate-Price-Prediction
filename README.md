@@ -17,6 +17,9 @@ This project is an end-to-end machine learning application that predicts median 
 - **Web Framework**: Streamlit
 - **Model Persistence**: Joblib
 
+### Check the demo video of the application by clicking on this link:
+https://github.com/KashishPundir/Real-Estate-Price-Prediction/blob/main/Demo%20Video.mp4
+
 ## ⚙️ Setup and Installation
 
 To run this application locally, you'll need to set up a Python virtual environment and install the required packages.
