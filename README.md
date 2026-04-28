@@ -29,7 +29,7 @@ cd Real-Estate-Price-Prediction
 
 **2. Create and activate a Python virtual environment: This keeps the project's dependencies isolated.**
 
-# For Windows
+#### For Windows
 ```
 python -m venv venv
 venv\Scripts\activate
